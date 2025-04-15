@@ -1,0 +1,115 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f6fc;
+  min-height: 100vh;
+}
+
+/* Container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #f2f6fc;
+  min-height: 100vh;
+}
+
+h1 {
+  color: #2c3e50;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+/* Search Bar */
+.search-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+input {
+  padding: 12px 15px;
+  width: 320px;
+  border: 2px solid #ccc;
+  border-radius: 30px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+button {
+  padding: 12px 25px;
+  background-color: #2ecc71;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #27ae60;
+}
+
+/* Loading and Error Messages */
+.loading, .error {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.error {
+  color: red;
+}
+
+/* Bike Cards */
+.bike-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.bike-card {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  width: 300px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bike-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.bike-card h2 {
+  font-size: 22px;
+  color: #34495e;
+  margin-bottom: 15px;
+}
+
+.bike-card p {
+  font-size: 16px;
+  color: #7f8c8d;
+}
+
+.bike-card p strong {
+  color: #2c3e50;
+}
