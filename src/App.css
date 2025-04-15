@@ -6,7 +6,7 @@
   justify-content: center;
   gap: 15px;
   margin-bottom: 40px;
-  border: 2px solid #3498db;  /* Add border around search section */
+  /* border: 2px solid #3498db;  Add border around search section */
   border-radius: 15px;
   padding: 20px;
   background-color: #ffffff;  /* Background for the search area */
@@ -80,4 +80,9 @@
 
 .bike-card p strong {
   color: #2c3e50;
+}
+
+input::placeholder {
+  color: #cccccc;
+  opacity: 1;
 }
